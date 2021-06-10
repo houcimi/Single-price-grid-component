@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+
+}
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+main {
+    margin: 0 auto;
+    max-width: 70%;
+}
+.price {
+    padding: 50px;
+    background-color: white;
+    border-radius: 13px 13px 0 0;
+}
+.price > h1 {
+    margin-top: 0;
+    color: var(--Cyan);
+    font-size: 25px;
+}
+.price > h2 {
+    margin-top: 31px;
+    font-size: 18px;
+    color: var(--Bright-Yellow);
+}
+.price > p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    margin-bottom: 40px;
+}
+.signupsec {
+    display: flex;
+
+}
+.signupsec .monthlysub {
+    background-color: var(--Cyan);
+    width: 50%;
+    padding: 50px;
+    border-radius: 0 0 0 13px;
+    color: white;
+}
+.signupsec .monthlysub h2 {
+    margin-top: 0;
+    font-size: 17px;
+}
+.signupsec .monthlysub h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 62%;
+    margin-bottom: 10px;
+}
+.signupsec .monthlysub h1 small{
+    font-size: 14px;
+    color: var(--Light-Gray);
+    font-weight: 400;
+}
+.signupsec .monthlysub p {
+    color: var(--Light-Gray);
+}
+.signupsec .monthlysub .submitBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+.signupsec .why {
+    background-color: hsl(179, 47%, 52%);
+    width: 50%;
+    padding: 50px;
+    color: white;
+    border-radius: 0 0 13px 0;
+}
+.signupsec .why h1 {
+    margin-top: 0;
+    font-size: 17px;
+}
+.signupsec .why p {
+    color: var(--Light-Gray);
+    margin-top: 36px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+@media (max-width:767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .signupsec {
+        flex-direction: column;
+    }
+    .price {
+        padding: 18px;
+    }
+    .price > h1 {
+        margin-top: 0;
+        color: var(--Cyan);
+        font-size: 17px;
+    }
+    .price > h2 {
+        margin-top: 22px;
+        font-size: 13px;
+        color: var(--Bright-Yellow);
+    }
+    .price > p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--Grayish-Blue);
+        margin-bottom: 16px;
+    }
+    .signupsec .monthlysub {
+        padding: 16px;
+    width: fit-content;
+    border-radius: 0;
+    }
+    .signupsec .why {
+        padding: 16px;
+    width: fit-content;
+    border-radius: 0 0 13px 13px;
+    }
+
+    .signupsec .why p {
+      font-size: 12px;
+      
+    }
+}
+
+
